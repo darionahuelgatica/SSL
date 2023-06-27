@@ -9,3 +9,5 @@
   * **make Tests**
 
     Para compilar y ejecutar los tests unitarios de las funciones Fahrenheit y Celsius.
+
+**Nota:** el comando make Clean de momento no funciona
