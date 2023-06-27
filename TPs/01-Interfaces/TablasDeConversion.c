@@ -1,27 +1,22 @@
 #include <stdio.h>
 #include "./Conversion.h"
 
+const int LOWER = 0;
+const int UPPER = 300;
+const int STEP = 20;
+
 int main() {
-    float fahr, celsius;
-    int lower, upper, step;
+    float celsius, fahr;
 
-    lower = 0;
-    upper = 300;
-    step = 20;
-
-    fahr = lower;
-    while (fahr <= upper) {
+    for(fahr = LOWER; fahr <= UPPER; fahr += STEP) {
         celsius = Celsius(fahr);
         printf("%6.1f\t%6.1f\n", fahr, celsius);
-        fahr += step;
     }
     
     printf("\n");
     
-    celsius = lower;
-    while (celsius <= upper) {
+    for(celsius = LOWER; celsius <= UPPER; celsius += STEP) {
         fahr = Fahrenheit(celsius);
         printf("%6.1f\t%6.1f\n", celsius, fahr);
-        celsius += step;
     }
 }
