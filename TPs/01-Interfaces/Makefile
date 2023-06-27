@@ -12,3 +12,6 @@ TablasDeConversion: Conversion.o
 
 Tablas: TablasDeConversion
 	TablasDeConversion
+
+Clean:
+	rm -rf TablasDeConversion ConversionTests *.o
